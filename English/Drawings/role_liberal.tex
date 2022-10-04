@@ -1,0 +1,20 @@
+\documentclass[margin=1mm]{standalone}
+
+\usepackage[x11names]{xcolor}
+\usepackage{tikz}
+\colorlet{fascist}{OrangeRed1}
+\colorlet{liberal}{Turquoise4}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{QTHeidelbergType}
+
+\begin{document}
+	\begin{tikzpicture}
+		\draw [line width = 10, dashed, rounded corners](-2.275,0) rectangle (2.275,-6.25);
+		
+		\node at (0,-1.5) {\includegraphics[height=2 cm]{liberal_logo.pdf}};
+		\node at (0,-3.5) {\fontsize{23}{23}\setmainfont{QTFraktur}\begin{tabular}{c}Sie sind\\ \textcolor{liberal}{Liberaler}.\end{tabular}};	
+		\node at (0,-5) {\fontsize{10}{10}\setmainfont{QTHeidelbergType}\begin{tabular}{c}You are\\ \textcolor{liberal}{liberal}.\end{tabular}};
+				
+	\end{tikzpicture}
+\end{document}

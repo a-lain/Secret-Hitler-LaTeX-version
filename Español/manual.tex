@@ -1,0 +1,298 @@
+\documentclass[13pt,a4paper,twocolumn,titlepage]{scrartcl}
+\usepackage[top=1.5cm, bottom=3cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
+\addtokomafont{section}{\renewcommand*\familydefault{\rmdefault}\fontsize{30}{30}\setmainfont{QTFraktur}\vspace*{-6mm}}
+\addtokomafont{subsection}{\renewcommand*\familydefault{\rmdefault}\fontsize{20}{20}\setmainfont{QTFraktur}\vspace*{-7mm}}
+\addtokomafont{paragraph}{\renewcommand*\familydefault{\rmdefault}\fontsize{15}{15}\setmainfont{QTFraktur}}
+\usepackage[skip=3mm, indent=0mm]{parskip}
+
+\usepackage[x11names]{xcolor}
+\colorlet{fascist}{OrangeRed1}
+\colorlet{liberal}{Turquoise4}
+
+\usepackage{yfonts}
+\usepackage{fontspec}
+\setmainfont{QTHeidelbergType}
+
+\usepackage{tikz}
+\usepackage{enumitem}
+
+\renewcommand\pagemark{\thepage}
+
+\begin{document}
+	\normalfont
+	
+	\begin{titlepage}
+		\centering
+		\topskip0pt
+		\vspace*{\fill}
+		\fontsize{85}{85}\selectfont HITLER\\ENCUBIERTO\\
+		\vspace{2cm}
+		\fontsize{35}{35}\selectfont VERSIÓN EN LaTeX
+		\vspace*{\fill}
+	\end{titlepage}
+
+	Nos encontramos en el año 1932, en la Alemania de antes de la Segunda Guerra Mundial. En Hitler Encubierto, los jugadores son políticos alemanes que están tratando de mantener a flote un frágil gobierno \textcolor{liberal}{liberal} y de contener al \textcolor{fascist}{fascismo} en auge. Empero, manténgase ojo avizor, hay \textcolor{fascist}{fascistas} ocultos entre ustedes y un jugador es \textcolor{fascist}{Hitler Encubierto}.
+	
+	\section*{Resumen}
+	Al comienzo del juego, a cada jugador se le asigna en secreto uno de los siguientes tres roles: 
+	\textcolor{liberal}{\textbf{liberal}}​, \textcolor{fascist}{\textbf{fascista}​}, o \textcolor{fascist}{​\textbf{Hitler}​}. Los \textcolor{liberal}{liberales} son mayoría, pero no se conocen entre sí. Por su parte, los \textcolor{fascist}{fascistas} deben recurrir al secretismo y al sabotage para lograr sus objetivos. \textcolor{fascist}{Hitler} juega a favor del bando \textcolor{fascist}{fascista} y los \textcolor{fascist}{fascistas} conocen la identidad de \textcolor{fascist}{Hitler} desde el comienzo, pero \textcolor{fascist}{Hitler} no sabe quiénes son los \textcolor{fascist}{fascistas} y tiene que tratar de averiguarlo.
+	
+	\textbf{Los \textcolor{liberal}{liberales} ganan promulgando cinco políticas \textcolor{liberal}{liberales} o matando a \textcolor{fascist}{​Hitler}​. Los \textcolor{fascist}{​fascistas} se hacen con la victoria promulgando seis políticas \textcolor{fascist}{​fascist​as} o si \textcolor{fascist}{​Hitler} es elegido Canciller una vez se hayan aprobado al menos tres políticas \textcolor{fascist}{​fascistas}.}
+	
+	Cada vez que se promulga una política \textcolor{fascist}{​fascista}, el gobierno se vuelve más poderoso y al Presidente se le otorga un poder de un único uso que ha de emplearse antes de que pueda dar comienzo la siguiente ronda. No importa de qué bando sea el Presidente; de hecho, puede que incluso jugadores \textcolor{liberal}{​liberales} se sientan tentados a aprobar políticas \textcolor{fascist}{​fascistas} para adquirir nuevos poderes.
+	
+	\section*{Objetivos}
+	Cada jugador tiene una identidad secreta como miembro del bando \textcolor{liberal}{​liberal} o del \textcolor{fascist}{​fascista}.
+	
+	\textcolor{liberal}{​Los jugadores del bando liberal ganan si acaece una de las siguientes:
+	\begin{itemize}
+		\item Se promulgan cinco políticas liberales.
+		\item Hitler es asesinado.
+	\end{itemize}
+	}
+
+	\textcolor{fascist}{​Los jugadores del bando fascista ganan si acontece una de las siguientes:
+	\begin{itemize}
+		\item Se promulgan seis políticas fascistas.
+		\item Se escoge como Canciller a Hitler en cualquier momento tras la aprobación de la tercera política fascista.
+	\end{itemize}
+	}
+
+	\section*{Contenidos del juego}
+	\begin{itemize}
+		\item \textbf{17} cartas de políticas (\textcolor{liberal}{\textbf{6} liberales}, \textcolor{fascist}{\textbf{11} fascistas})
+		\item \textbf{10} cartas de rol secreto (6 \textcolor{liberal}{liberales}, 3 \textcolor{fascist}{fascistas}, 1 \textcolor{fascist}{Hitler})
+		\item \textbf{10} carnés de afiliación a un partido político (6 \textcolor{liberal}{liberales}, 4 \textcolor{fascist}{fascistas})
+		\item \textbf{10} sobres para cartas
+		\item \textbf{10} papeletas ja!
+		\item \textbf{10} papeletas nein!
+		\item \textbf{1} marcador del proceso de elección
+		\item \textbf{1} carta del mazo de políticas
+		\item \textbf{1} carta del mazo de descartes
+		\item \textbf{3} tableros fascistas
+		\item \textbf{1} tablero liberal
+		\item \textbf{1} placa de Presidente
+		\item \textbf{1} placa de Canciller
+	\end{itemize}
+	
+	\section*{Preparación}
+	Seleccione el tablero \textcolor{fascist}{fascista} que se corresponde con el número de jugadores y colóquelo junto al tablero \textcolor{liberal}{liberal}. Baraje las 11 políticas \textcolor{fascist}{fascistas} y las 6 \textcolor{liberal}{liberales} en un único mazo de políticas y deposite dicho mazo bocabajo sobre la carta del mazo de políticas.
+	
+	Necesitará un sobre para cada jugador y cada uno de ellos deberá contener contener una carta de rol secreto, el correspondiente carné de afiliación a un partido político, una papeleta ja! y una papeleta nein! Use la tabla de abajo para determinar la distribución correspondiente de los roles.
+	
+	La carta de rol secreto \textcolor{liberal}{liberal} siempre ha de ir acompañada de un carné de afiliación al partido \textcolor{liberal}{liberal} y las cartas de rol secreto \textcolor{fascist}{fascista} y \textcolor{fascist}{Hitler} siempre deben ir acompañadas de un carné de afiliación al partido \textcolor{fascist}{fascista}.	
+	\begin{center}
+		\begin{tabular}{l|c|c|c|c|c|c}
+			\# jugadores & 5 & 6 & 7 & 8 & 9 & 10\\
+			\hline
+			\textcolor{liberal}{liberales} & 3 & 4 & 4 & 5 & 5 & 6\\
+			\hline
+			\textcolor{fascist}{fascistas} & 1+H & 1+H & 2+H & 2+H & 3+H & 3+H\\	
+		\end{tabular}
+	\end{center}
+	
+	Asegúrese de que tienen el número correcto de \textcolor{fascist}{fascistas} ordinarios además de \textcolor{fascist}{Hitler}!
+	
+	Una vez se han preparado los sobres, ¡asegúrese de barajarlos para que el rol de cada jugador sea un secreto! Cada jugador debe recibir un sobre elegido al azar.
+	
+	\vspace*{-8mm}
+	\paragraph{\textcolor{SeaGreen4}{¿Por qué hay cartas de rol secreto y carnés de afiliación a un partido?}}
+	\textcolor{SeaGreen4}{Hitler Encubierto cuenta con una mecánica de investigación que permite a algunos jugadores averiguar en qué bando están los otros jugadores y esta mecánica únicamente funciona si el rol especial de Hitler no se desvela. El carné de afiliación de Hitler muestra una lealtad al partido fascista, pero no revela la existencia de un rol especial. Los liberales que descubren a un fascista deben averiguar por ellos mismos si han encontrado a un fascista ordinario o a su líder.}
+	
+	Una vez cada jugador ha recibido un sobre, todos los jugadores deben examinar su rol secreto en secreto. Escoja aleatoriamente al primer Candidato a Presidente y hágale llegar a ese jugador las placas de Presidente y Canciller.
+	
+	\vspace*{-8mm}
+	\paragraph{\textcolor{SeaGreen4}{Obtenga la aplicación}}
+	\textcolor{SeaGreen4}{Visite \url{secrethitler.com/app} para obtener una aplicación que puede narrar estas directrices por usted (en inglés).}
+	
+	\textcolor{Blue3}{En partidas de 5-6 jugadores}, dé las siguientes instrucciones a todos los jugadores:
+	\begin{itemize}
+		\item Cierren todos los ojos.
+		\item Que los \textcolor{fascist}{fascistas} y \textcolor{fascist}{Hitler} abran los ojos y se reconozcan mutuamente.
+		\item $\phantom{}$[Espere un rato largo].
+		\item Cierren todos los ojos.
+		\item Todos pueden abrir los ojos. Si alguien está confundido o algo ha ido mal, por favor, que lo haga saber.
+	\end{itemize}
+
+		\textcolor{Blue3}{En partidas de 7-10 jugadores}, dé las siguientes directrices a todos los jugadores:
+	\begin{itemize}
+		\item Cierren todos los ojos y extiendan su puño cerrado enfrente suyo.
+		\item Que los \textcolor{fascist}{fascistas} que NO son \textcolor{fascist}{Hitler} abran los ojos y se reconozcan.
+		\item \textcolor{fascist}{Hitler}, mantenga los ojos cerrados pero extienda el dedo pulgar de su mano hacia arriba.
+		\item Señoras y señores \textcolor{fascist}{fascistas}, tomen nota de quién ha extendido el pulgar; ese jugador es \textcolor{fascist}{Hitler}.
+		\item $\phantom{}$[Espere un rato largo].
+		\item Cierren todos los ojos y recojan sus puños.
+		\item Todos pueden abrir los ojos. Si alguien está confundido o algo ha ido mal, por favor, que lo haga saber.
+	\end{itemize}
+	
+	\section*{¿Cómo se juega?}
+	Hitler Encubierto se juega por rondas. En cada ronda, hay una \textcolor{Blue3}{elección} para formar gobierno, una \textcolor{Blue3}{sesión legislativa} para aprobar una nueva política y una \textcolor{Blue3}{acción ejecutiva} para ejercer el poder gubernamental.
+	\subsection*{Elección}
+	\begin{enumerate}
+		\item \textcolor{Blue3}{Rotar la Candidatura a la Presidencia}
+		
+		Al comienzo de una nueva ronda, la placa de Presidente se mueve en el sentido de las agujas del reloj al siguiente jugador, que es el nuevo Candidato a Presidente.
+		
+		\item \textcolor{Blue3}{Proponer a un Canciller}
+		
+		El Candidato a Presidente escoge a un Candidato a Canciller pasando la placa de Canciller a cualquier otro jugador elegible. El Candidato a Presidente puede, si así lo desea, debatir con la mesa las posibles opciones para conseguir un consenso y, de esta forma, hacer más probable que el Gobierno salga elegido. 
+		
+		\textcolor{Blue3}{Elegibilidad.} El último Presidente electo y el último Canciller electo no son elegibles para ser nominados Candidatos a Canciller.
+		
+		\vspace*{-8mm}
+		\paragraph{\textcolor{SeaGreen4}{Sobre la elegibilidad}}
+		\textcolor{SeaGreen4}
+		{
+			\begin{itemize}
+				\item Las restricciones se aplican a los últimos Presidente y Canciller electos, no a los últimos candidatos propuestos.
+				\item Las restricciones únicamente limitan las candidaturas a la Cancillería; cualquiera puede ser Presidente, incluso alguien que acaba de ser Canciller.
+				\item Si quedan cinco jugadores o menos en el juego, sólo el último Canciller electo no es elegible como Candidato a Canciller; el último Presidente electo puede ser propuesto como candidato.
+				\item Existen otras reglas que afectan específicamente a la elegibilidad: el poder de veto y el marcador del proceso de elección. No se preocupe por ellas todavía; hablaremos sobre cada una de ellas en la sección correspondiente.
+			\end{itemize}
+		}
+		
+		\item \textcolor{Blue3}{Votación para formar gobierno}
+		
+		Después de que el Candidato a Presidente haya nombrado a un Candidato a Canciller elegible, los jugadores pueden debatir sobre el gobierno propuesto hasta que todos estén listos para votar. Cada jugador, incluidos los candidatos, debe votar. Una vez todos los jugadores están preparados, han de revelar sus papeletas de voto simultáneamente de forma que el voto de cada jugador sea público.
+		
+		\textcolor{Blue3}{Si la votación acaba en empate o si la mayoría de los jugadores vota no,} la propuesta de gobierno no sale adelante. El Candidato a Presidente pierde la oportunidad de ser elegido y la placa de Presidente se mueve en el sentido de las agujas del reloj al siguiente jugador. El marcador del proceso de elección se mueve una casilla hacia la derecha.
+		
+		\textcolor{Blue3}{Marcador del proceso de elección.} Si la mesa rechaza tres gobiernos seguidos, el país se sume en el caos. Revélese y promúlguese inmediatamente la primera carta del mazo de políticas. Se ignora cualquier poder proporcionado por la política, pero el marcador de proceso de elección vuelve a la posición de inicio (0 fracasos) y todos los jugadores pasan a ser elegibles para la Cancillería durante la próxima elección. Si quedan menos de tres cartas en el mazo de políticas, barájense junto a las situadas en el mazo de descartes para crear un nuevo mazo de políticas.
+		
+		Cada vez que se juega una carta de políticas bocarriba, el marcador del proceso de elección vuelve a su posición de inicio, independientemente de si la política ha sido promulgada por un gobierno elegido o por el populacho enfurecido.
+		
+		\textcolor{Blue3}{Si la mayoría de los jugadores vota sí,}​ el Candidato a Presidente y el Candidato a Canciller se convierten en Presidente y Canciller, respectivamente. \textcolor{Blue3}{Si ya se han aprobado tres o más políticas fascistas,} pregúntese al Canciller si es \textcolor{fascist}{Hitler}. Si es el caso, el juego ha terminado y los \textcolor{fascist}{fascistas} ganan. En caso contrario, los jugadores saben de cierto que el Canciller no es \textcolor{fascist}{Hitler}. Dese paso a la Sesión Legislativa.
+	\end{enumerate}
+	
+	\subsection*{Sesión legislativa}
+	Durante la sesión legislativa, el Presidente y el Canciller trabajan juntos para promulgar una nueva política en secreto. El Presidente roba las tres primeras cartas del mazo de políticas, las mira en secreto y descarta una bocabajo en el mazo de descartes. Hace llegar las otras dos políticas restantes al Canciller, quien las mira en secreto, descarta una carta de políticas bocabajo y promulga la política restante poniendo la carta bocarriba en el tablero correspondiente. 
+	
+	Cualquier comunicación verbal o no verbal entre el Presidente y el Canciller queda terminantemente prohibida. El Presidente y el Canciller NO PUEDEN elegir políticas al azar, barajar las cartas antes de descartar una o llevar a cabo cualquier otro truco inteligente para evitar seleccionar una política intencionadamente y en secreto. Adicionalmente, el Presidente debe pasarle al Canciller las dos políticas simultáneamente, en vez de de una en una para poder ver la reacción del Canciller. Intentar transmitir los contenidos de la mano usando aleatoriedad o cualquier otro método de selección inusual va en contra del espíritu del juego. ¡No lo haga!
+	
+	\textcolor{Blue3}{Nunca deben revelarse las políticas descartadas. Los jugadores tienen que depender de la palabra del Presidente y del Canciller, que son libres de mentir.}
+	
+	\vspace*{-8mm}
+	\paragraph{\textcolor{SeaGreen4}{Sobre mentir:}}
+	\textcolor{SeaGreen4}
+	{
+		A menudo, algunos jugadores obtienen información que el resto desconoce, como cuando el Presidente o el Canciller miran las cartas de políticas o cuando el Presidente usa el poder de investigación para ver el carné de afiliación de un jugador. Siempre se puede mentir acerca de información oculta en Hitler Encubierto. La única ocasión en la que los jugadores HAN DE decir la verdad es en escenarios relacionados con Hitler que pueden dar fin al juego: un jugador que es Hitler debe hacer saber que lo es si es asesinado o si se le escoge como Canciller después de que se hayan aprobado al menos tres políticas fascistas.}
+	
+	\textcolor{Blue3}{Si quedan menos de tres cartas en el mazo de políticas al final de una sesión legislativa}, barájense junto con las cartas del mazo de descartes para crear un nuevo mazo de políticas. Las políticas no empleadas no deben hacerse públicas y nunca se deben poner simplemente encima del nuevo mazo de políticas.
+	
+	\textcolor{Blue3}{Si el gobierno promulga una política \textcolor{fascist}{fascista} que cubre en el tablero un poder presidencial}, el Presidente actual debe hacer uso de dicho poder. Consúltese la sección sobre la acción ejecutiva.
+	
+	\textcolor{Blue3}{Si el gobierno promulga una política \textcolor{liberal}{liberal} o una política \textcolor{fascist}{fascista} que no proporciona ningún poder presidencial}, empiécese una nueva ronda con una nueva elección.
+	
+	\subsection*{Acción ejecutiva}
+	Si la política \textcolor{fascist}{fascista} recién aprobada proporciona un poder presidencial, el Presidente ha de usarlo antes de que la próxima ronda pueda comenzar.  Antes de hacer uso del poder, el Presidente es libre de debatir al respecto con el resto de jugadores, pero al final es el Presidente quien decide cómo y cuándo se usa el poder. El juego no puede continuar hasta que el Presidente emplee el poder. Los poderes presidenciales son de un único uso y no se acumulan ni perduran de un turno a otro.
+	
+	\subsection*{Poderes presidenciales}
+	\begin{itemize}[leftmargin=2.5cm]
+		
+		\item [\tikz{\begin{scope}[scale=0.75]
+				\draw [black, line width=4] (-0.5,0.5) circle (0.6);		
+				\fill [black!50!white] (-0.5,0.5) circle (0.35);
+				\fill [black] (-0.5,0.5) circle (0.15);
+				\draw [black,line width=4] (-0.1,0.1)--(0.2,-0.2);
+				\fill [black, rounded corners, rotate=-45] (0.2,0.2) rectangle (2,-0.2); 	
+		\end{scope}}] \textcolor{Blue3}{Investigar lealtad}
+		
+		 El Presidente escoge a un jugador para investigarlo. Dicho jugador debe facilitar al Presidente su carné de afiliación a un partido político (¡no su tarjeta de rol secreto!). El Presidente comprueba la lealtad del jugador en secreto y le devuelve su carné. El Presidente puede compartir (¡o mentir sobre!) los resultados de su investigación, a su discreción. No se puede investigar dos veces a un mismo jugador en la misma partida.
+
+		\item [\tikz{\begin{scope}[scale=0.7]
+				\fill [black, rounded corners=5, rotate=-45] (-0.80,-0.18) rectangle(1.3,0.18);
+				\fill [black, rounded corners=5, rotate=-45] (0.5,0.22) rectangle(1.3,0.58);
+				\fill [black, rounded corners=5, rotate=-45] (0.55,0.62) rectangle(1.3,0.98);
+				\fill [black, rounded corners=5, rotate=-45] (0.6,1.02) rectangle(1.3,1.38);
+				\fill [black, rounded corners=5, rotate=-45] (0.85,-0.2) rectangle(2,1.4);
+				\fill [black, rounded corners=5, rotate=15] (0.1,-1.8) rectangle(1,-1.4);
+		\end{scope}}] \textcolor{Blue3}{Convocatoria de elección especial}
+		
+		El Presidente escoge a cualquier otro jugador de la mesa como próximo Candidato a Presidente pasándole la placa de Presidente. Este último nombra a cualquier jugador elegible Candidato a Canciller y la elección prosigue como de costumbre.
+		
+		\textcolor{Blue3}{Una elección especial nunca salta a ningún jugador. Después de una elección especial, la placa de Presidente vuelve a la izquierda del Presidente que convocó la elección especial.}
+		
+		Si el Presidente pasa la placa de Presidente al siguiente jugador en la rotación, dicho jugador tiene la oportunidad de presentarse a Presidente dos rondas seguidas: una por la elección especial y la otra por el cambio habitual en la rotación de la Presidencia.
+		
+		\item [\tikz{\begin{scope}[xshift=-15.35, yshift=-5.3, scale=0.8]
+				\fill [black, rounded corners] (13.35,8) rectangle (15.35,8.2);
+				\fill [black, rounded corners] (13.35,7.7) rectangle (15.35,7.9);
+				\fill [black, rounded corners] (13.35,7.4) rectangle (15.35,7.6);
+				\fill [black, rounded corners] (13.35,5.3) rectangle (15.35,7.3);
+		\end{scope}	}] \textcolor{Blue3}{Vistazo a las políticas}
+	
+		El Presidente mira en secreto las tres primeras cartas del mazo de políticas y luego las devuelve al mazo sin alternar su orden.
+		
+		\item [\tikz{\begin{scope}[scale=0.7]
+				\fill [black, rotate=-45] (0,2.2) ellipse (0.15 and 0.75);
+				\fill [black!50!white, rounded corners, rotate=-45] (-0.3,-0.1) rectangle (0.3,0.1);
+				\fill [black, rotate=-45] (-0.2,0.05) rectangle (0.2,0.25);
+				\fill [black!50!white, rotate=-45, rounded corners] (-0.3,0.25) rectangle (0.3,1.75);
+				\fill [black!50!white, rotate=-45] (-0.15,1.75) rectangle (0.15,2.2);
+		\end{scope}}] \textcolor{Blue3}{Ejecución}
+	
+		El Presidente ejecuta a un jugador de la mesa diciendo «Ejecuto formalmente a [nombre de jugador]». Si dicho jugador es \textcolor{fascist}{Hitler}, el juego termina con una victoria \textcolor{liberal}{liberal}. Si el jugador ejecutado no es \textcolor{fascist}{Hitler}, la mesa \textcolor{Blue3}{no} debe saber si ha muerto un \textcolor{fascist}{fascista} o un \textcolor{liberal}{liberal}; los jugadores deben tratar de averiguar por sí mismos la nueva composición de la mesa. Los jugadores ejecutados están eliminados del juego y no pueden hablar, votar o presentarse a cargo alguno.
+		
+	\end{itemize}
+
+	\subsection*{Poder de veto}
+	El poder de veto es una regla especial que entra en juego una vez se han promulgado cinco políticas \textcolor{fascist}{fascistas}. Durante todas las sesiones legislativas tras la aprobación de la quinta política \textcolor{fascist}{fascista}, el poder ejecutivo adquiere una nueva habilidad permanente que le permite descartar las tres políticas si \textcolor{Blue3}{tanto} el Canciller \textcolor{Blue3}{como} el Presidente están conformes.
+	
+	El Presidente roba tres políticas, descarta una y pasa las dos restantes al Canciller como de costumbre. Entonces, el Cancillere puede, en lugar de promulgar una de las dos políticas, decir «Me gustaría vetar estas propuestas». Si el presidente consiente diciendo «Estoy de acuerdo con este veto», ambas políticas se descartan y la placa de Presidente se pasa al jugador de la izquierda, como siempre.  Si el Presidente no da su consentimiento, el Canciller debe promulgar una de las dos políticas como hace normalmente.
+	
+	Cada uso del poder de veto constituye un gobierno inactivo y hace avanzar en una posición el marcador del proceso de elección.
+	
+	\section*{Notas sobre la estrategia}
+	\begin{itemize}
+		\item \textcolor{Blue3}{Todo el mundo debería pretender ser \textcolor{liberal}{liberal}.} Puesto que el bando \textcolor{liberal}{liberal} tiene una mayoría en votos, puede fácilmente dejar fuera del juego a un jugador que afirma ser \textcolor{fascist}{fascista}. Por tanto, como \textcolor{fascist}{fascista}, no supone ninguna ventaja desvelar el rol a los demás. Por su parte, los \textcolor{liberal}{liberales}, generalmente, deberían decir siempre la verdad, pues están intentado descifrar qué ocurre en el juego como si fuese un puzzle, así que mentir puede poner a su equipo significativamente en desventaja.
+		
+		\item \textcolor{Blue3}{Si es su primera vez jugando como \textcolor{fascist}{Hitler}, simplemente recuerde: sea lo más \textcolor{liberal}{liberal} posible.} Promulgue leyes \textcolor{liberal}{liberales}, vote a favor de gobiernos \textcolor{liberal}{liberales}, bese bebés. Confíe en que sus compañeros  \textcolor{fascist}{fascistas} crearán oportunidades para que usted pueda aprobar políticas \textcolor{liberal}{liberales} y para poder avanzar en políticas \textcolor{fascist}{fascistas} cuando ellos estén en el gobierno. Los \textcolor{fascist}{fascistas} ganan manipulando sutilmente la mesa y esperando al momento oportuno para promulgar políticas \textcolor{fascist}{fascistas}, no jugando abiertamente como malvados.
+		
+		\item \textcolor{Blue3}{A los \textcolor{liberal}{liberales} les suele beneficiar reducir la velocidad del juego y debatir la información disponible.} Por su parte, a los \textcolor{fascist}{fascistas} les suelen beneficiar los votos precipitados y la confusión.
+		
+		\item \textcolor{Blue3}{Los \textcolor{fascist}{fascistas} ganan la mayor parte de las veces eligiendo a \textcolor{fascist}{Hitler} como Canciller, ¡no promulgando seis políticas fascistas!} Que \textcolor{fascist}{Hitler} sea elegido como Canciller no es una condición de victoria secundaria, es la esencia de una estrategia \textcolor{fascist}{fascista} exitosa. \textcolor{fascist}{Hitler} siempre debería jugar como un \textcolor{liberal}{liberal} y debería, generalmente, evitar mentir y discutir con otros jugadores. Cuando llegue el momento, \textcolor{fascist}{Hitler} necesitará la confianza de los \textcolor{liberal}{liberales} para ser elegido Canciller. Incluso si, al final, no se escoge a \textcolor{fascist}{Hitler} como Canciller, la desconfianza sembrada entre los \textcolor{liberal}{liberales} es clave para conseguir que los \textcolor{fascist}{fascistas} puedan acceder a puestos de gobierno cerca del final del juego.
+		
+		\item \textcolor{Blue3}{Pregunte a otros jugadores por qué emprendieron una acción.} Esto es especialmente importante en el caso de los poderes presidenciales; de hecho, pregunte con antelación al Presidente a quién está pensando investigar, nombrar o asesinar.
+		
+		\item \textcolor{Blue3}{Si se promulga una política \textcolor{fascist}{fascista} sólo hay tres posibles culpables: el Presidente, el Canciller o el mazo de políticas.} Intente averiguar quién (¡o qué!) les ha llevado a la situación actual.
+		
+	\end{itemize}
+	
+	\section*{Agradecimientos}
+	\textcolor{Blue3}{A Mike, Tommy y Mac les gustaría dar las gracias a:}
+	
+	Shari Spiro, Dan Shapiro, Elan Lee, Mike Selinker, Luke Crane y a todos los demás miembros de Kickstarter, a todos los que han contribuido económicamente al Kickstarter y al equipo de Cartas contra la Humanidad («Cards against Humanity»).
+	
+	Gracias a nuestros jugadores de prueba Karlee, Tom, Maria, Trin, Andy, Cory, Katie, Veronica, Sandy, Greg, Andrew, y a todos aquellos que nos ayudaron a refinar las primeras versiones del juego.
+	
+	Y, especialmente, gracias a las 34.565 personas que nos han patrocinado y nos han ayudado a hacer este juego realidad.
+	
+	\clearpage
+	
+	Hitler Encubierto ha sido financiado vía \textcolor{Blue3}{Kickstarter}.
+	\section*{Créditos \& Licencia}
+	Hitler Encubierto ha sido creado por Mike Boxleiter, Tommy Maranges, and Mac Schubert.
+	
+	Hitler Encubierto se otorga con una licencia Atribución/Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional.
+	
+	Hitler Encubierto versión en LaTeX es una adaptación de la \hyperref{https://www.secrethitler.com/}{}{}{versión original} llevada a cabo por Andrés Laín Sanclemente. Todos los materiales gráficos se recrearon desde cero usando LaTeX. Los nombres dados a los políticas se corresponden con eventos históricos, tal y como se describe en \hyperref{https://www.weimarer-republik.net/themenportal/chronik-1918-bis-1933/1932/}{}{}{esta crónica de la República de Weimar}.
+	
+	La traducción del juego al español también se debe a Andrés Laín Sanclemente.
+	
+	\textcolor{Blue3}{USTED PUEDE:}
+	\begin{itemize}
+		\item \textcolor{Blue3}{Compartir}, copiar y redistribuir este juego por cualquier medio y en cualquier formato.
+		\item \textcolor{Blue3}{Adaptar}, remezclar, cambiar y desarrollar más el juego.
+	\end{itemize}
+	\textcolor{Blue3}{BAJO LAS SIGUIENTES CONDICIONES:}
+	\begin{itemize}
+		\item \textcolor{Blue3}{Atribución}. Si crea algo usando nuestro juego, debe darnos crédito, proporcionar una referencia a nuestro trabajo y explicar qué es lo que ha cambiado.
+		\item \textcolor{Blue3}{No comercial}. No puede hacer uso de nuestro juego para ganar dinero.
+		\item \textcolor{Blue3}{Compartir Igual}. Si remezcla, cambia o desarrolla más nuestro juego, debe publicar su trabajo bajo la misma licencia Creative Commons que hemos usado (BY-NC-SA 4.0).
+		\item \textcolor{Blue3}{Ninguna restricción adicional}. No puede hacer uso de condiciones legales o medidas tecnológicas que legalmente impidan a otros hacer algo que nuestra licencia permite. Eso significa que no puede publicar nada que use nuestro juego en ninguna tienda de aplicaciones sin nuestra aprobación.
+	\end{itemize}
+
+	Puede consultar más información sobre Creative Commons en CreativeCommons.org. (Nuestra licencia está disponible en  \url{https://www.creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es}).
+\end{document}

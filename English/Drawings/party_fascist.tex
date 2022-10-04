@@ -1,0 +1,22 @@
+\documentclass[margin=1mm]{standalone}
+
+\usepackage[x11names]{xcolor}
+\usepackage{tikz}
+\colorlet{fascist}{OrangeRed1}
+\colorlet{liberal}{Turquoise4}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{QTHeidelbergType}
+
+\begin{document}
+	\begin{tikzpicture}
+		\draw [line width = 5, dotted, rounded corners, fascist](-2.275,0) rectangle (2.275,-6.25);
+		
+		\fill [fascist] (0,-3) circle (1.7cm);
+		\fill [white] (0,-3) circle (1.5cm);
+		\node at (0,-3) {\includegraphics[height=2 cm]{fascist_logo.pdf}};
+		\node at (0,-0.8) {\fontsize{12}{12}\setmainfont{QTFraktur}\begin{tabular}{c}Faschistische Partei\\ Deutschlands\end{tabular}};	
+		\node at (0,-5.5) {\fontsize{12}{12}\setmainfont{QTFraktur}\begin{tabular}{c}Mitgliedskarte\end{tabular}};
+		
+	\end{tikzpicture}
+\end{document}
