@@ -1,0 +1,22 @@
+\documentclass[margin=1mm]{standalone}
+
+\usepackage[x11names]{xcolor}
+\usepackage{tikz}
+\colorlet{fascist}{OrangeRed1}
+\colorlet{liberal}{Turquoise4}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{QTHeidelbergType}
+
+\begin{document}
+	\begin{tikzpicture}
+		\draw [line width = 10, rounded corners](-2,0) rectangle (2,-6.25);
+		\node at (0,-1.5) {\includegraphics[height=2 cm]{fascist_logo.pdf}};
+		\node at (0,-3) [fascist] {\fontsize{20}{20}\setmainfont{QTHeidelbergType}FASCISTA};
+		
+		\node at (0,-4) {\fontsize{10}{10}\setmainfont{QTFraktur}\begin{tabular}{c}Verordnung zum\\ Schutz von Volk\\ und Staat\end{tabular}};
+		\node at (0,-5.25) {\fontsize{10}{10}\setmainfont{QTHeidelbergType}\begin{tabular}{c}Decreto para la\\ protección del\\ Pueblo y del Estado\end{tabular}};
+		
+				
+	\end{tikzpicture}
+\end{document}
